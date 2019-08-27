@@ -1,11 +1,12 @@
 package bank.service;
 
-import bank.beans.AdminBean;
-import bank.beans.CustomerBean;
-import bank.beans.MemberBean;
+import bank.domains.AdminBean;
+import bank.domains.CustomerBean;
+import bank.domains.MemberBean;
 
 public interface MemberService {
 	public void join(CustomerBean param);
+	public void register(AdminBean param);
 	public CustomerBean[] findAllCustomers();
 	public AdminBean[] findAllAdmins();
 	public MemberBean[] findByName(String name);

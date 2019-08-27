@@ -1,11 +1,10 @@
 package bank.controllers;
 
 import javax.swing.JOptionPane;
-
-import bank.beans.CustomerBean;
-import bank.beans.MemberBean;
+import bank.domains.CustomerBean;
+import bank.domains.MemberBean;
 import bank.service.MemberService;
-import bank.service.MemberServiceImpl;
+import bank.serviceimpl.MemberServiceImpl;
 
 public class UserController {
 	public static void main(String[] args) {
@@ -18,7 +17,7 @@ public class UserController {
 			switch (JOptionPane.showInputDialog("은행 업무 시스템\n " 
 												+ "0.종료\n " 
 												+ "1.회원가입\n " 
-												+ "2.\n " 
+												+ "2.총 고객수\n " 
 												+ "3.\n"
 												+ "4.\n"
 												+ "5.\n"
@@ -38,9 +37,24 @@ public class UserController {
 				memberbean.setPass(arr[1]);
 				memberbean.setName(arr[2]);
 				memberbean.setSsn(arr[3]);
-				JOptionPane.showMessageDialog(null,"회원가입 완료.");
+				JOptionPane.showMessageDialog(null, "회원가입 성공");
 				break;
-
+			case "2":
+				break;
+			case "3":
+				break;
+			case "4":
+				break;
+			case "5":
+				break;
+			case "6":
+				break;
+			case "7":
+				break;
+			case "8":
+				break;
+			case "9":
+				break;
 			default:
 				break;
 			}

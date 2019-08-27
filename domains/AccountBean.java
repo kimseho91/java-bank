@@ -1,12 +1,12 @@
-package bank.beans;
+package bank.domains;
 
 public class AccountBean {
 	private String accountNum,today,money;
 	
-	public void setAccount(String account) {
+	public void setAccountNum(String account) {
 		this.accountNum = accountNum;
 	}
-	public String getAccount() {
+	public String getAccountNum() {
 		return accountNum;
 	}
 	public void setToday(String today) {
@@ -24,8 +24,8 @@ public class AccountBean {
 	
 	@Override
 	public String toString() {
-		return String.format("계좌번호:%s\n"
-							+ "거래일:%s\n"
-							+ "돈:%s", accountNum,today,money);
+		return "계좌정보 [계좌번호" + accountNum 
+					+ ", 거래일=" + today 
+					+ ", 돈=" + money + "]";
 	}
 }

@@ -1,4 +1,4 @@
-package bank.beans;
+package bank.domains;
 
 public class MemberBean {
 	private String id,pass,name,ssn;
@@ -30,9 +30,9 @@ public class MemberBean {
 	
 	@Override
 	public String toString() {
-		return String.format("아이디:%s\n"
-							+ "비밀번호:%s\n"
-							+ "이름:%s\n"
-							+ "주민등록번호:%s", id,pass,name,ssn);
+		return "회원정보 [아이디=" + id 
+					+ ", 비번=" + pass 
+					+ ", 이름=" + name 
+					+ ", 주민번호=" + ssn + "]";
 	}
 }

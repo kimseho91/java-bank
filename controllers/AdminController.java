@@ -2,9 +2,9 @@ package bank.controllers;
 
 import javax.swing.JOptionPane;
 
-import bank.beans.AccountBean;
+import bank.domains.AccountBean;
 import bank.service.AccountService;
-import bank.service.AccountServiceImpl;
+import bank.serviceimpl.AccountServiceImpl;
 
 public class AdminController {
 
@@ -22,10 +22,20 @@ public class AdminController {
 												+ "7.\n"
 												+ "8.\n"
 												+ "9.")) {
+			case "0":
+				return;
 			case "1":
-				
 				break;
-
+			case "2":
+				break;
+			case "3":
+				break;
+			case "4":
+				break;
+			case "5":
+				break;
+			case "6":
+				break;
 			default:
 				break;
 			}
